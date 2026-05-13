@@ -1,0 +1,18 @@
+# --- Web Framework ---
+fastapi      # Web framework for /defend and /health endpoints
+uvicorn      # ASGI server to run FastAPI
+httpx        # Async HTTP client to call Ollama (LLM)
+
+# --- Machine Learning & Reinforcement Learning ---
+torch        # PyTorch - RL agent training & inference
+gymnasium    # RL environment for training the DQN agent
+numpy        # Array operations used everywhere
+
+# --- Optimization & Swarm Intelligence ---
+pyswarms     # Particle Swarm Optimization for deception tuning
+
+# --- Database & External Services ---
+supabase     # Supabase client (insert attack logs, real-time)
+
+# --- Configuration ---
+pyyaml       # YAML support for templates
