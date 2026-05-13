@@ -10,10 +10,10 @@ def explain_action(ip, attack_type, action, params):
     """
     try:
         resp = httpx.post(OLLAMA_URL, json={
-            "model": "qwen2.5:3b",
+            "model": "llama3.1:8b",           # <-- changed to llama3.1
             "prompt": prompt,
             "stream": False
-        }, timeout=10)
+        }, timeout=15)                        # slightly longer timeout for 8B
         return resp.json()["response"].strip()
     except Exception:
         return "Explanation unavailable."
