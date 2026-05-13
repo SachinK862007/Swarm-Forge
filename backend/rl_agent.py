@@ -1,16 +1,18 @@
 import torch
 import sys, os
+
+# Allow importing from the parent folder (simulation)
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from simulation.dqn_agent import DQN
 
-# Load the trained model
-model = DQN(5, 3)   # 5 inputs, 3 actions
-model.load_state_dict(torch.load("models/policy_net.pt", map_location="cpu"))
+# Build the absolute path to the model, relative to THIS file
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "models", "policy_net.pt")
+
+model = DQN(5, 3)
+model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu"))
 model.eval()
 
 def get_action(state):
-    """state: list of 5 numbers [attack_type, attempts, honeypot_count, isolated_flag, has_token]"""
     state_t = torch.tensor(state, dtype=torch.float32).unsqueeze(0)
     with torch.no_grad():
-        q_values = model(state_t)
-        return torch.argmax(q_values).item()
+        return torch.argmax(model(state_t)).item()
