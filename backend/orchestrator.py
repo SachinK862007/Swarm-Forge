@@ -5,6 +5,7 @@ from supabase_client import insert_attack_log
 from honeypot import engage, isolate, spawn
 
 MITRE_MAP = {"recon": "T1595", "bruteforce": "T1110", "injection": "T1190"}
+ATYPE_TO_INT = {"recon": 0, "bruteforce": 1, "injection": 2}
 
 def handle_attack(attack_data: dict):
     ip = attack_data.get("ip", "unknown")
@@ -14,7 +15,9 @@ def handle_attack(attack_data: dict):
     isolated_flag = 0
     has_token = 1 if "token" in attack_data.get("details", "") else 0
 
-    state = [attack_type, attempts, honeypot_count, isolated_flag, has_token]
+    # Convert attack type string to integer for the RL model
+    attack_type_int = ATYPE_TO_INT.get(attack_type, 0)
+    state = [attack_type_int, attempts, honeypot_count, isolated_flag, has_token]
     action_id = get_action(state)
 
     action_str_map = {0: "engage", 1: "isolate", 2: "spawn"}

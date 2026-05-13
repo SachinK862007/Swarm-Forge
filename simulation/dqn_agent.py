@@ -10,5 +10,6 @@ class DQN(nn.Module):
             nn.ReLU(),
             nn.Linear(64, action_dim)
         )
+
     def forward(self, x):
         return self.net(x)

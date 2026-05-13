@@ -52,5 +52,5 @@ for ep in range(episodes):
     if ep % 20 == 0:
         print(f"Episode {ep}, reward: {total_reward:.2f}")
 
-torch.save(agent.state_dict(), "../backend/models/policy_net.pt")
+torch.save(agent.state_dict(), "backend/models/policy_net.pt")
 print("Model saved to backend/models/policy_net.pt")
