@@ -30,3 +30,27 @@
 2026-05-14 00:23:35,004 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -3.4663581288009615, best pos: [2.87664695 3.70704949 4.57959903]
 2026-05-14 00:23:41,849 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
 2026-05-14 00:23:42,730 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 04:40:19,515 - pyswarms.single.global_best - INFO - Optimize for 5 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2026-05-14 04:40:19,525 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -3.506299796363723, best pos: [2.9792942  4.51441338 3.31164341]
+2026-05-14 04:40:30,231 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 04:40:31,963 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 04:40:40,851 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 04:40:41,457 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 04:40:50,681 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 04:40:51,924 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 04:40:53,978 - pyswarms.single.global_best - INFO - Optimize for 5 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2026-05-14 04:40:53,983 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -3.4465069567927156, best pos: [2.19267961 4.65872618 4.76274648]
+2026-05-14 04:41:02,439 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 04:41:02,713 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 04:41:10,696 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 04:41:10,958 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 05:01:24,091 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 05:01:25,343 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 05:02:07,089 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 05:02:07,942 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 05:02:26,180 - pyswarms.single.global_best - INFO - Optimize for 5 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2026-05-14 05:02:26,184 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -3.722496108601845, best pos: [2.95279042 4.42391776 4.59462786]
+2026-05-14 05:02:32,423 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 05:02:33,094 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"
+2026-05-14 05:03:10,967 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-14 05:03:11,943 - httpx - INFO - HTTP Request: POST https://beorvnttfbczhjfkorcp.supabase.co/rest/v1/attack_logs "HTTP/2 201 Created"

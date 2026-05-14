@@ -1,0 +1,32 @@
+body,
+.stApp {
+    background-color: #0D1117;
+    color: #E6EDF3;
+    font-family: 'Segoe UI', monospace;
+}
+
+.sidebar .sidebar-content {
+    background-color: #161B22;
+}
+
+h1,
+h2,
+h3 {
+    color: #00FF41;
+}
+
+.stButton>button {
+    background-color: #00B4D8;
+    color: white;
+    border-radius: 8px;
+}
+
+.stMetric {
+    color: #49d566;
+}
+
+.attack-row {
+    border-left: 4px solid #00B4D8;
+    padding-left: 10px;
+    margin: 5px 0;
+}

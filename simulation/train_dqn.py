@@ -12,7 +12,7 @@ agent = DQN(state_dim, action_dim)
 optimizer = optim.Adam(agent.parameters(), lr=0.001)
 criterion = nn.MSELoss()
 memory = deque(maxlen=2000)
-batch_size, gamma, epsilon, episodes = 32, 0.99, 0.1, 200
+batch_size, gamma, epsilon, episodes = 32, 0.99, 0.1, 1000
 
 print("Training started...")
 for ep in range(episodes):
